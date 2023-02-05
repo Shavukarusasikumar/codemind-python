@@ -23,5 +23,3 @@ for i in range(1,t+1):
             if prime(h)==1:
                 print(h)
                 break
-            
-        
