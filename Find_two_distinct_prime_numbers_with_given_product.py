@@ -1,21 +1,22 @@
-def prime(n):
-    a=0
-    for n in range(2,n):
+def pri(n):
+    c=0
+    for i in range(2,n):
         if n%i==0:
-            a+=1
-    if a==0:
+            c+=1
+    if c==0:
         return 1
     return 0
 n=int(input())
-a=0
+l=[]
 for i in range(2,n):
     for j in range(2,n):
-      if i*j==n and prime(i)==1 and prime(j)==1:
-          s1=j
-          s2=i
-          a+=1
-if a==1:
-    print(s1,s2)
-else:
+        if pri(i)==1 and pri(j)==1:
+            if i*j==n:
+                l.append(i)
+                l.append(j)
+if sum(l)==0:
     print(-1)
-         
+else:
+    l=set(l)
+    for i in l:
+        print(i,end=' ')
