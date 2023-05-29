@@ -1,0 +1,6 @@
+n=input()
+n=n.lower()
+n=n.replace(' ','')
+a=list(n)
+b=set(a)
+print(len(b))
