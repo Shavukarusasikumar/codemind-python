@@ -1,0 +1,5 @@
+n=input()
+n=n.replace(' ','')
+a=list(n)
+a.sort()
+print(a[0],a.count(a[0]),a[-1],a.count(a[-1]))
