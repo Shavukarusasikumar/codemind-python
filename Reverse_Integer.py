@@ -1,15 +1,11 @@
+def pal(n):
+    n=str(n)
+    return int(n[::-1])
 n=int(input())
-r=0
-if n>0:
-    while n:
-        p=n%10
-        r=r*10+p
-        n=n//10
-    print(r)
+if n<0:
+    a=abs(n)
+    c=str(pal(a))
+    s='-'+c
+    print(int(s))
 else:
-    n=-n
-    while n:
-        p=n%10
-        r=r*10+p
-        n=n//10
-    print(-r)
+    print(pal(n))
