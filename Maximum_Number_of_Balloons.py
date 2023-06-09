@@ -1,7 +1,4 @@
-n=input()
-n=n.lower()
-n=n.replace(' ','')
-a=list(n)
+a=input()
 l=[]
 c='banlo'
 for i in c:
@@ -9,5 +6,3 @@ for i in c:
 l[-1]=l[-1]//2
 l[-2]=l[-2]//2
 print(min(l))
-
-    
