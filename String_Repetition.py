@@ -1,5 +1,4 @@
 n=input()
-n=n.replace(' ','')
 k=int(input())
 a1=k//(len(n)-1)
 a2=k%(len(n)-1)
