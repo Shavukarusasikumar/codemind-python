@@ -6,20 +6,14 @@ for _ in range(n):
 for _ in range(n):
     a=int(input())
     l2.append(a)
-i=0
-c=[]
-while True:
-    if len(l1)==0:
-        break
-    if l1[0]<=l2[i]:
-        l1.pop(0)
-        l2.pop(i)
-        i=-1
-    if len(l1)==0:
-        break
-    i+=1
-    if abs(i)==len(l2):
-        c.append(l1[0])
-        l1.pop(0)
-        i=-1
-print(len(c))
+c=0
+for i in l1:
+    k=0
+    for j in range(len(l2)):
+        if i<=l2[j]:
+            l2[j]=0
+            k=1
+            break
+    if k==0:
+        c+=1
+print(c)
