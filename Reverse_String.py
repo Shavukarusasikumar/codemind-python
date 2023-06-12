@@ -1,3 +1,4 @@
-x=list(map(str,input().split()))
-x.reverse()
-print(*x)
+n=input()
+a=n.split()
+for i in range(len(a)-1,-1,-1):
+    print(a[i],end=' ')
