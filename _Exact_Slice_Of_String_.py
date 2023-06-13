@@ -1,0 +1,5 @@
+n=input()
+a1=int(input())
+a2=int(input())
+print(n[a1:a2+1])
+# print(n,a1,a2)
